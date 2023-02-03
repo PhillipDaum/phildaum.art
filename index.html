@@ -14,21 +14,27 @@
   <!-- page CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <title>[X]-close tab-</title>
+  <title class="text-info font-monospace">phildaum.art</title>
 </head>
 
 <!-- --------------------------- --------------- ----------- ------------ ------------ -->
 
-<!-- can set onload or delete for JS running out the gate-->
-<body onload="">
+<!-- can set onload or delete for JS running out the gate
+  make active item text light - others text-info -->
+<body class="bg-dark" onload="">
+  <!--NAV-->
   <div class="container-fluid">
-    <div class="row vh-100">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item font-monospace"><a class="text-light" href="#">phildaum.art</a></li>
+      </ol>
+    </nav>
 
-<p class="text-info">what is this website?</p> 
-
-
-
+    <div class="row">
+      <h1 class="text-info font-monospace">phildaum.art</h1>
+      <a class="h2 text-light font-monospace ms-4" href="./i-think-what-i-see-is-what-ive-seen.html">gallery</a>
     </div>
+  </div>
   </div>
 
 <!-- --------------------------- --------------- ----------- ------------ ------------ -->
@@ -38,7 +44,6 @@
 <script src="js/index.js"></script>
 <!-- option 2: Separate Popper and Bootstrap JS -->  
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="h
   
 </body>
 </html>
