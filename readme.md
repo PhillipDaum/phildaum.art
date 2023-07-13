@@ -1,8 +1,5 @@
-# bootstrap-boilerplate
+# Phil Daum Art
 
 ## Description
-i think i can make this faster with bootstrap then worpress and then i don't pay hosting
-
-## Other
-  **bold text**
+This is slowly becoming my new art portfolio site. Stay Tuned!
 
