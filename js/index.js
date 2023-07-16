@@ -7,3 +7,11 @@ function unHover(x) {
     x.className = "text-light";
   }
 
+//updates document with CV, printing effect
+function printCv(r) {
+
+
+
+
+}
+
