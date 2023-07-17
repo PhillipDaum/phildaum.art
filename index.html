@@ -12,38 +12,657 @@
   <script src="https://kit.fontawesome.com/0544cb5778.js" crossorigin="anonymous"></script>
 
   <!-- page CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
   <title class="text-info font-monospace">phildaum.art</title>
 </head>
 
 <!-- --------------------------- --------------- ----------- ------------ ------------ -->
 
-<!-- CHANGE! - USE OFFCANVAS NAVBAR AND JUST ONE GIANT PAGE!!! - may load slow. I COULD USE modals to show higher res photos, then also
-prolly just update the breacrumb at the top as users scroll gallery -->
-<body class="bg-dark" onload="">
-  <!--NAV-->
-  <div class="container-fluid">
-    <nav aria-label="breadcrumb">
+<body>
+
+  <!--TOP Menu for small devices--->
+  <div class="row mb-2 d-block d-sm-none">
+    <nav class="navbar bg-dark fixed-top">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item font-monospace"><a class="text-light" href="#">phildaum.art</a></li>
+        <li class="breadcrumb-item font-monospace"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="./index.html">phildaum.art</a></li>
+        <li class="breadcrumb-item text-light" aria-current="page"><a class="text-light" href="#">gallery</a></li>
       </ol>
     </nav>
+  </div>
 
-    <div class="row">
-      <h1 class="text-info font-monospace">phildaum.art</h1>
-      <a class="h2 text-light font-monospace ms-4" href="./i-think-what-i-see-is-what-ive-seen.html">gallery</a>
+  <div class="row bg-dark">
+    <!--SIDE Menu for large devices--->
+    <div class="col col-3 col-xxl-6 col-xl-5 d-none d-sm-block">
+      <nav class="navbar sticky-top bg-dark flex-column align-items-stretch p-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item font-monospace"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="./index.html">phildaum.art</a></li>
+          <li class="breadcrumb-item text-light" aria-current="page"><a class="text-light" href="#">gallery</a></li>
+        </ol>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)"  href="#i-think-what-i-see-is-what-ive-seen">I Think What I See Is What I've Seen</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="#realism-in-recovery">Realism in Recovery</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="#en-plein-air">En plein air</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="#abstract-impressions-on-media">Abstract Impressions on Media</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="#motel-room-paintings">Motel Room Paintings</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="#six-little-windows">Six Little Windows</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" href="#liquid-therapy">Liquid Therapy</a></li>
+          <li class="list-group-item font-monospace bg-dark"><a class="text-light" onmouseover="hoverIt(this)" onmouseout="unHover(this)" onclick="printOnce()" href="#cv">Phil's CV</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  </div>
+    
+    <!-- Main Content--->
+    <div class="col">
 
+      <!--I think what I see is What I've Seen--->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="i-think-what-i-see-is-what-ive-seen"><u>I think what I see is What I've Seen</u></h1>
+          </div>   
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/my-first-day-at-the-beach.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">My First Day at the Beach</p>
+              <p class="text-info fs-3 font-monospace ms-4">2016</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/the-possibilities-are-just-endless-when.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">The Possibilities Are Just Endless When...</p>
+              <p class="text-info fs-3 font-monospace ms-4">2016</p>
+            </div>
+          </div>
+          <div class="row bg-dark">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/the-vastness-of-it-all.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">The Vastness of It All...</p>
+              <p class="text-info fs-3 font-monospace ms-4">2016</p>
+            </div>
+          </div>
+          <div class="row bg-dark">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+     </div>
+
+      <!-- Realism in Recovery  --->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5 series-title" id="realism-in-recovery"><u>Realism in Recovery</u></h1>
+          </div>   
+          </div>
+
+          <!-- add back later  
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/ded-pirat-pat.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">ded_pirat_pat</p>
+              <p class="text-info fs-3 font-monospace ms-4">2017</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+        --->
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/progressive-self-portrait.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Profressive Self-Portrait</p>
+              <p class="text-info fs-3 font-monospace ms-4">2016</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/a-depiction-0f-wild-horses.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">A Depiction of Wild Horses</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row bg-dark">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+  
+         <!-- add back later  
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/the-decision-to-stay-radiant.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">The Decision to Stay Radiant</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+        --->
+
+    
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/when-i-think-about-me-i-hug-myself.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">When I Think About Me, I Hug Myself</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- En plein air --->
+      <div>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="en-plein-air"><u>En plein air</u></h1>
+          </div>   
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/isnt-it-past-your-bedtime.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Isn't It Past Your Bedtime</p>
+              <p class="text-info fs-3 font-monospace ms-4">2016</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/an-unseasonably-warm-winter.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">An Unseasonably Warm Winter</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/the-neighborhood.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">The Neighborhood</p>
+              <p class="text-info fs-3 font-monospace ms-4">2013</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Abstract Impressions on Media --->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="abstract-impressions-on-media"><u>Abstract Impressions on Media</u></h1>
+          </div>   
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/dreamboard.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Dreamboard</p>
+              <p class="text-info fs-3 font-monospace ms-4">2013</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/out-of-the-woods.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Out of the Woods</p>
+              <p class="text-info fs-3 font-monospace ms-4">2014</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/flowerpot.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Flowerpot</p>
+              <p class="text-info fs-3 font-monospace ms-4">2014</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Motel Room Paintings --->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="motel-room-paintings"><u>Motel Room Paintings</u></h1>
+          </div>   
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/mp-1.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">[untitled]</p>
+              <p class="text-info fs-3 font-monospace ms-4">2017</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/mp-2.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">[untitled]</p>
+              <p class="text-info fs-3 font-monospace ms-4">2017</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/mp-3.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">[untitled]</p>
+              <p class="text-info fs-3 font-monospace ms-4">2017</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+            
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/mp-4.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">[untitled]</p>
+              <p class="text-info fs-3 font-monospace ms-4">2017</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Six Little Windows --->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="six-little-windows"><u>Six Little Windows</u></h1>
+          </div>   
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/at-peace-with-the-chaos.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">At Peace with the Chaos</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/me-at-the-beach-in-the-universe.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Me at the Beach in the Universe</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/butterfly-kisses-are-good.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Butterfly Kisses Are Good</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/venus-fly-snap.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Venus Fly Snap</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/my-softer-side.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">My Softer Side</p>
+              <p class="text-info fs-3 font-monospace ms-4">2014</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/scraping-by.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Scraping By</p>
+              <p class="text-info fs-3 font-monospace ms-4">2014</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liquid Therapy --->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="liquid-therapy"><u>Liquid Therapy</u></h1>
+          </div>   
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/untitled.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">[untitled]</p>
+              <p class="text-info fs-3 font-monospace ms-4">2017</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/untitled-liquid-landscape.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">[untitled]</p>
+              <p class="text-info fs-3 font-monospace ms-4">2016</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col mt-4 d-flex align-items-center justify-content-center">
+              <img class="img-fluid p-3" src="./img/liquid-therapy.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-top">
+              <p class="text-success fs-3">Liquid Therapy</p>
+              <p class="text-info fs-3 font-monospace ms-4">2015</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 me-5">
+              <hr class="border-2 border-top border-light ms-5 me-5">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CV --->
+      <div>
+        <div class="row bg-dark">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light ms-2 mt-5" id="cv"><u>CV</u></h1>
+          </div>   
+        </div>
+
+
+        
+        <div class="container-fluid bg-dark">
+          <p id="cvp"></p>
+        </div>
+
+<!-- Ends row with side menu -->
+  </div>
 <!-- --------------------------- --------------- ----------- ------------ ------------ -->
 
 <!-- JavaScript; -->
 <!-- my JS -->
-<script src="js/index.js"></script>
+<script src="./js/index.js"></script>
 <!-- option 2: Separate Popper and Bootstrap JS -->  
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
