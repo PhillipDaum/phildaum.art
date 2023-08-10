@@ -10,8 +10,6 @@ function unHover(x) {
 
 //updates document with CV, prints it only once
 
-let thingy = false;
-
 function printCv() {
     //prints cv
     for (var i = 0; i < cv.length; i++) {
@@ -34,61 +32,156 @@ function printOnce() {
   if (!thingy) printCv();
 }
 
+// print space 
+// thingType, enter
+// then year, TAB, title (comma, space) venue, etc.... enter
+// for each thingType, blank div, title, list items....
 
-const cv = [
-"===== SELECTED EXHIBITIONS =====",
-"2018  Project Phoenix, International Cultic Studies Association Annual Conference, Philidelphia, PA",
-"2018  AXIOM, ARKA Art, Houston, TX",
-"2018  The Grafters, Mercantile Montrose, Houston, TX (2-person show)",
-"2017  Anonymous Children’s Immigration Art, Pop-Up Gallery, Galveston Art Center, Galveston, TX",
-"2017  Law and Artyer, Kallinen Contemporary, Houston, TX",
-"2017  TRUMP! The Art Show, Kallinen Contemporary, Houston, TX",
-"2017  Uniquely Vivid Art Show, Tellepsen Family Downtown YMCA, Houston, TX",
-"2016  Speaking of Abstract, JoMar Visions, Houston, TX",
-"2016  Kind of Like Tree Rings, MOD Coffeehouse, Galveston, TX (solo)",
-"2016  G. Lee Gallery, Galveston, TX",
-"2015  Tres Hobres and The Last Picture Show, G. Lee Gallery, Galveston, TX (3-person show)",
-"2015  Brushes by the Beach, G. Lee Gallery, Galveston, TX",
-"2015  Stuff I Made, Fraser Valley Library, Fraser, CO (solo)",
-"2014  Artistico Gallery, Winter Park, CO",
-"2014  Possibly Picasso, Idaho Falls, ID",
-"2009  notMOMA, Gallery 2, Washington State University, Pullman, WA",
-"-",
-"===== PERFORMANCES =====",
-"2017  Why Am I Still Doing This?, East Down Warehouse, Houston, TX",
-"2017  Digital Anxiety Rejection Therapy, Kohn’s Downtown, Kohn’s Wine, Darts, Coffee, Art, Houston, TX",
-"2017  Digital Anxiety Rejection Therapy, JoMar Visions, Houston, TX",
-"-",
-"===== INTERVENTIONS ======",
-"2017  Activating Crosswalks - Across from Katz’s Deli (Take 1,) Montrose, Houston, TX",
-"2017  Activating Crosswalks - Across from Katz’s Deli (Take 2,) Montrose, Houston, TX",
-"2016  Black Friday Free Hugs, Greater Houston Area, TX",
-"2015  Free Hugs Shirt, Various Locations",
-"-",
-"===== WORKSHOPS + LECTURES =====",
-"2016  Composition, Abstraction and Expression, G. Lee Gallery, Galveston, TX",
-"2016  Abstract Expressionism, G. Lee Gallery, Galveston, TX",
-"-",
-"===== EXHIBITIONS JURIED =====",
-"2016  World Ocean Day Art Contest, Stewart Beach Pavilion, Artist Boat, Galveston, TX",
-"-",
-"===== PERMANENT PUBLIC ART =====",
-"2016  “Cradle of Life - Saltwater marshes of Galveston,” With the Houston YMCA after school program, Project SIT, Artist Boat, Seawall near 53rd, Galveston, TX",
-"2016  “Is this Island a Desert? - Freshwater Marshes of Galveston,” With the Houston YMCA after school program, Project SIT, Artist Boat, Seawall near 53rd, Galveston, TX",
-"2016  “A River of Grasses - Prairies of Galveston” With the Houston YMCA after school program, Project SIT, Artist Boat, Seawall near 53rd, Galveston, TX",
-"-",
-"==== PERMANENT COLLECTION ====",
-"2015  [Untitled], YMCA of the Rockies",
-"-",
-"===== OTHER PROFESSIONAL EXPERIENCE =====",
-"2016  Figure Drawing Model, Galveston Arts Center, Galeveston, TX",
-"2015  Teaching Artist, Galveston Arts Center, Galeveston, TX",
-"-",
-"===== BIBLIOGRAPHY =====",
-"'Hurricane art by HISD students on sale to raise money for hurricane relief,' HISD News Blog, 28 September 2017",
-"“Estudiantes de Texas acuden al arte para luchar contra el miedo de que sus padres sean deportados,” Univision 45 Houston, 13 May 2017",
-"“Trump-themed Houston art show receives dozens of submissions from anonymous school children,” Houston Chronicle, 12 May 2017",
-"“Anonymous Texas School Art Delivers A Message To Donald Trump,” Christian Sarkar, The Huffington Post, 2 May 2016",
-"“Rotary Crawfish Boil,” Coast Monthly, 28 May 2016",
-"“Sun of the Beach,” Marooned, Fall 2013, Arizona State University Dept. of English",
-]
+
+
+
+const cV = [
+  {
+    thingType: "Selected Exhibtions",
+    items: [ 
+      {
+        year: 2018,
+        title: "Project Phoenix",
+        venue: "International Cultic Studies Association Annual Conference",
+        city: "Philadelphia",
+        state: "PA"
+      },
+      {
+        year: 2018,
+        title: "AXIOM",
+        venue: "ARKA Art",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2018,
+        title: "The Grafters (2-person show)",
+        venue: "Mercantile Montrose",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2017,
+        title: "Anonymous Children’s Immigration Art",
+        venue: "Pop-Up Gallery,  Galveston Art Center",
+        city: "Galveston",
+        state: "TX"
+      },
+      {
+        year: 2017,
+        title: "Law and Artyer",
+        venue: "Kallinen Contemporary",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2017,
+        title: "TRUMP! The Art Show",
+        venue: "Kallinen Contemporary",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2017,
+        title: "Uniquely Vivid Art Show",
+        venue: "Tellepsen Family Downtown YMCA",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2016,
+        title: "Speaking of Abstract",
+        venue: "JoMar Visions",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2016,
+        title: "Kind of Like Tree Rings (solo)",
+        venue: "MOD Coffeehouse",
+        city: "Galveston",
+        state: "TX"
+      },
+      {
+        year: 2016,
+        title: "",
+        venue: "G. Lee Gallery",
+        city: " Galveston",
+        state: " TX"
+      },
+      {
+        year: 2015,
+        title: "Tres Hobres and The Last Picture Show (3-person show)",
+        venue: "G. Lee Gallery",
+        city: "Galveston",
+        state: "TX"
+      },
+      {
+        year: 2015,
+        title: "Brushes by the Beach",
+        venue: "G. Lee Gallery",
+        city: "Galveston",
+        state: "TX"
+      },
+      {
+        year: 2015,
+        title: "Stuff I Made (solo)",
+        venue: "Fraser Valley Library",
+        city: "Fraser",
+        state: "CO"
+      },
+      {
+        year: 2014,
+        title: "Artistico Gallery",
+        venue: "",
+        city: "Winter Park",
+        state: "CO"
+      },
+      {
+        year: 2014,
+        title: "Possibly Picasso",
+        venue: "",
+        city: "Idaho Falls",
+        state: "ID"
+      },
+      {
+        year: 2009,
+        title: "notMOMA",
+        venue: "Gallery 2,  Washington State University",
+        city: "Pullman",
+        state: "WA"
+      } 
+    ]   
+  },
+  {
+    thingType: "Performances",
+    items: [ 
+      {
+        year: 2017,
+        title: "Why Am I Still Doing This?",
+        venue: "East Down Warehouse",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2017,
+        title: "Digital Anxiety Rejection Therapy",
+        venue: "Kohn’s Wine, Darts, Coffee, Art",
+        city: "Houston",
+        state: "TX"
+      },
+      {
+        year: 2017,
+        title: "Digital Anxiety Rejection Therapy",
+        venue: "JoMar Visions",
+        city: "Houston",
+        state: "TX"
+      } 
+    ]
+  }    
+];
